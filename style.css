@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: #d4e9e2;
+    color: #1e3932;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    /* display: grid;
+    grid-template-columns: 800px 200px; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}

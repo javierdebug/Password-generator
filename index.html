@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <h3>Password Generator - Create strong a password for you</h3>
+    <div id="container">
+        <div class="content">
+            <label >Length of password:
+                <input type="number" name="length" id="length">
+            </label>
+            <br>
+            <label >Repeat characters</label>
+            <input type="checkbox" name="repeat" id="repeat">
+            <br>
+            <label >Use special characters (ex.: "+/*.")
+            </label>
+            <input type="checkbox" name="special" id="special">
+            <br>
+            <label >Include numbers</label>
+            <input type="checkbox" name="number" id="number">
+            <br>
+            <label >Include letters</label>
+            <input type="checkbox" name="letters" id="letters">
+            <br>
+            <button type="submit">Generate!</button>
+
+            <div class="output"></div>
+        </div>
+        <div class="description">
+            <p>Description: 
+                <ul>Select the length of your desire password</ul>
+                <ul>Select if you want to include letters, numbers or special characters</ul>
+                <ul>Click the 'Generate' button</ul>
+            </p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
