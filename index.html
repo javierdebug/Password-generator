@@ -13,7 +13,7 @@
     <div id="container">
         <div class="content">
             <label >Length of password:
-                <input type="number" name="length" id="length">
+                <input type="number" name="length" id="length" max="999">
             </label>
             <br>
             <label >Repeat characters</label>
@@ -30,17 +30,21 @@
             <input type="checkbox" name="letters" id="letters">
             <br>
             <button type="submit">Generate!</button>
-
+            
             <div class="output"></div>
         </div>
         <div class="description">
             <p>Description: 
-                <ul>Select the length of your desire password</ul>
-                <ul>Select if you want to include letters, numbers or special characters</ul>
-                <ul>Click the 'Generate' button</ul>
+                <ul>
+                    <li class="item">Select the length of your desire password</li>
+                    <li class="item">Select if you want to include letters, numbers or special characters</li>
+                    <li class="item">Click the 'Generate' button</li>
+
+                </ul>
             </p>
         </div>
     </div>
+    <div id="footer">Made by JavierD</div>
     
 
 </body>
