@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Password Generator</title>
 </head>
 <body>
@@ -13,24 +13,24 @@
     <div id="container">
         <div class="content">
             <label >Length of password:
-                <input type="number" name="length" id="length" max="999">
+                <input type="number" name="length" id="length" max="999" min="5">
             </label>
             <br>
-            <label >Repeat characters</label>
+            <!-- <label >Repeat characters <span>(Note: Max 93 characters)</span></label>
             <input type="checkbox" name="repeat" id="repeat">
-            <br>
+            <br> -->
             <label >Use special characters (ex.: "+/*.")
             </label>
             <input type="checkbox" name="special" id="special">
             <br>
             <label >Include numbers</label>
-            <input type="checkbox" name="number" id="number">
+            <input type="checkbox" name="numbers" id="numbers">
             <br>
             <label >Include letters</label>
             <input type="checkbox" name="letters" id="letters">
             <br>
             <button type="submit">Generate!</button>
-            
+            <p>Your password:</p>
             <div class="output"></div>
         </div>
         <div class="description">
