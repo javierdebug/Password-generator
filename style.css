@@ -13,8 +13,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: space-between; */
     line-height: 1.8rem;
+    /* height: 100vh; */
 }
 
 h3 {
@@ -29,24 +30,21 @@ ul {
 
 #container {
     margin: 30px 20px;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 30px;
+    grid-template-areas: "content description";
+    column-gap: 20px;
 
     /* display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start; */
     
     min-height: 45vh;
+    /* margin-bottom: 40vh; */
 }
 
 span {
     font-size: 0.9rem;
-}
-
-.description {
-    font-size: 1.1rem;
 }
 
 .output {
@@ -63,11 +61,38 @@ span {
     line-height: 1rem;
 }
 
+.content {
+    background: rgba(182, 182, 182, 0.247);
+    border-radius: 15px;
+    padding: 8px;
+    grid-area: content;
+}
+
+.description {
+    font-size: 1.1rem;
+    padding-left: 25px;
+    padding: 0 25px;
+    background: rgba(182, 182, 182, 0.247);
+    border-radius: 15px;
+    grid-area: description;
+}
 
 #footer {
-    background-color: #008248;
-    color: #f1f8f6;
-    min-height: 60px;
+    color: #008248;
+    /* color: #f1f8f6; */
+    /* min-height: 60px; */
     /* text-align: center; */
-    width: 100%;
+    /* width: 100%; */
+}
+
+@media (max-width: 500px) {
+    #container{
+        display: grid;
+        grid-template-columns: 50vw;
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "description"
+            "content";
+    }
 }
