@@ -1,6 +1,7 @@
 
 const password = document.querySelector(".output");
-const generate = document.querySelector("button");
+const generate = document.querySelector("#btn-generate");
+const copy = document.querySelector("#btn-copy")
 // let minChar1 = 33;
 // let maxChar1 = 126;
 // let minChar2 = 0;
@@ -62,5 +63,8 @@ generate.addEventListener("click", (e) => {
     }
 })
 
-
-
+copy.addEventListener("click", (e) => {
+    let copiedText = document.querySelector("div.output").innerText;
+    navigator.clipboard.writeText(copiedText);
+    alert('Password copied to clipboard');
+})
