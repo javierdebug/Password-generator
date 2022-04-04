@@ -9,7 +9,7 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <h3>Password Generator - Create strong a password for you</h3>
+    <h3>Password Generator - Create a strong password for you</h3>
     <div id="container">
         <div class="content">
             <label >Length of password:
@@ -19,19 +19,19 @@
             <!-- <label >Repeat characters <span>(Note: Max 93 characters)</span></label>
             <input type="checkbox" name="repeat" id="repeat">
             <br> -->
-            <label >Use special characters (ex.: "+/*.")
-            </label>
-            <input type="checkbox" name="special" id="special">
+            <label >Use special characters (ex.: "+/*.")</label> 
+            <input type="checkbox" name="special" id="special" checked>
             <br>
             <label >Include numbers</label>
-            <input type="checkbox" name="numbers" id="numbers">
+            <input type="checkbox" name="numbers" id="numbers" checked>
             <br>
             <label >Include letters</label>
-            <input type="checkbox" name="letters" id="letters">
+            <input type="checkbox" name="letters" id="letters" checked>
             <br>
-            <button type="submit">Generate!</button>
+            <button class="btn" id="btn-generate" type="submit">Generate!</button>
             <p>Your password:</p>
             <div class="output"></div>
+            <button class="btn" id="btn-copy">Copy it</button>
         </div>
         <div class="description">
             <p>Description: 
