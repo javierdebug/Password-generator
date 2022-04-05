@@ -16,6 +16,7 @@ body{
     /* justify-content: space-between; */
     line-height: 1.8rem;
     /* height: 100vh; */
+    
 }
 
 h3 {
@@ -81,11 +82,14 @@ span {
 }
 
 #footer {
-    color: #008248;
+    background-color: #008248;
+    border-radius: 5px;
     text-align: center;
-    /* color: #f1f8f6; */
+    font-size: 1.3rem;
+    color: #f1f8f6;
     /* min-height: 60px; */
-    /* width: 100%; */
+    width: 35%;
+    word-wrap: break-word;
 }
 
 .item {
@@ -106,4 +110,28 @@ span {
         max-width: 100%;
     }
 
+    #footer {
+        width: 60%;
+    }
+
+}
+
+i {
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #7ce4c3;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #1e3932;
+    font-size: 0.9rem;
 }
