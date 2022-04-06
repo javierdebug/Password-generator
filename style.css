@@ -135,3 +135,10 @@ a {
     border: 2px solid #1e3932;
     font-size: 0.9rem;
 }
+
+#errorMsg {
+    font-size: 0.9rem;
+    font-style: bold;
+    color: rgb(184, 41, 41);
+    line-height: 1rem;
+}
