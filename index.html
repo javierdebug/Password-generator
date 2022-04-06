@@ -17,10 +17,10 @@
                 <input type="number" name="length" id="length" max="999" min="5">
             </label>
             <br>
-            <!-- <label >Repeat characters <span>(Note: Max 93 characters)</span></label>
+            <label >Do not repeat characters</label>
             <input type="checkbox" name="repeat" id="repeat">
-            <br> -->
-            <label >Use special characters (ex.: "+/*.")</label> 
+            <br>
+            <label >Use special characters (ex.: " /@*. ")</label> 
             <input type="checkbox" name="special" id="special" checked>
             <br>
             <label >Include numbers</label>
@@ -30,6 +30,7 @@
             <input type="checkbox" name="letters" id="letters" checked>
             <br>
             <button class="btn" id="btn-generate" type="submit">Generate!</button>
+            <p id="errorMsg"></p>
             <p>Your password:</p>
             <div class="output"></div>
             <button class="btn" id="btn-copy">Copy it</button>
@@ -48,7 +49,8 @@
         <p>
             <strong>Made by JavierD</strong> <br>
             <a href="https://github.com/javierdebug" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/javier-vargas-d/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/javier-vargas-d/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
         </p>
     </div>
 </body>
