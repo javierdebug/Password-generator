@@ -33,7 +33,7 @@ ul {
 #container {
     margin: 30px 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.0fr 1.5fr;
     grid-template-areas: "content description";
     column-gap: 20px;
 
@@ -43,6 +43,7 @@ ul {
     
     /* min-height: 45vh; */
     /* margin-bottom: 40vh; */
+    
 }
 
 span {
@@ -101,7 +102,6 @@ span {
         display: grid;
         grid-template-columns: 95vw;
         row-gap: 20px;
-        /* grid-template-columns: 1fr; */
         grid-template-areas: 
             "description"
             "content";
@@ -141,4 +141,9 @@ a {
     font-style: bold;
     color: rgb(184, 41, 41);
     line-height: 1rem;
+}
+
+summary {
+    border-bottom: 1px solid #1e3932;
+    margin-bottom: 15px;
 }
