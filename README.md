@@ -1,3 +1,8 @@
+### Check out an updated version of this project:
+- Repo: https://github.com/javierdebug/password-generator-tool
+- Live: https://password-generator-tool-one.vercel.app/
+#
+
 # Password Generator web app
 
 Live site: https://javierdebug.github.io/Password-generator/
